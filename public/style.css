@@ -1,0 +1,401 @@
+
+/* =====================================
+   LAHARI PET CARE - WEBSITE DESIGN
+===================================== */
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f7f0;
+    color: #35443a;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #e5eddf;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    color: #385b45;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    color: #647568;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #385b45;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f4d58d;
+}
+
+/* Homepage Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 65px 8%;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    color: #385b45;
+    margin-bottom: 15px;
+}
+
+.hero-text h3 {
+    color: #8a9b78;
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #606d62;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    min-width: 250px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Doctor Section */
+
+.doctor-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 8%;
+    background-color: #eaf0e6;
+    flex-wrap: wrap;
+}
+
+.doctor-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.doctor-image img {
+    width: 100%;
+    max-width: 430px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.doctor-text h2 {
+    font-size: 30px;
+    color: #385b45;
+    margin-bottom: 20px;
+}
+
+.doctor-text p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #59695c;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #55785d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #304d39;
+    transform: translateY(-2px);
+}
+
+/* Homepage Services */
+
+.home-container {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.home-container h2 {
+    font-size: 30px;
+    color: #385b45;
+    margin-bottom: 10px;
+}
+
+.home-container > p {
+    margin-bottom: 35px;
+    color: #68766b;
+}
+
+.home-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #385b45;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #68766b;
+    margin-bottom: 22px;
+}
+
+/* Form Pages */
+
+.page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.page-container > h2 {
+    color: #385b45;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.page-container > p {
+    text-align: center;
+    color: #68766b;
+    margin-bottom: 30px;
+}
+
+/* Form Section */
+
+.form-section {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.form-section h3 {
+    text-align: center;
+    color: #385b45;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 7px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #405b47;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5dfd3;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fcfdfb;
+    outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #55785d;
+    box-shadow: 0 0 4px rgba(85, 120, 93, 0.2);
+}
+
+form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 25px;
+}
+
+/* Tables */
+
+.table-section {
+    margin: 45px auto;
+    overflow-x: auto;
+}
+
+.table-section h3 {
+    color: #385b45;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    min-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    background-color: #55785d;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #e5e9e2;
+    color: #536256;
+}
+
+tr:hover td {
+    background-color: #f0f5ed;
+}
+
+/* Footer */
+
+footer {
+    background-color: #385b45;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero,
+    .doctor-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 6%;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .doctor-image img {
+        height: 280px;
+    }
+
+    .home-cards {
+        align-items: center;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .page-container {
+        padding: 12px;
+    }
+}

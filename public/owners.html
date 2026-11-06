@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Owners - Lahari Pet Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🐾 Lahari Pet Care</h1>
+        <p>Pet Owner Management</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="owners.html">Owners</a>
+        <a href="pets.html">Pets</a>
+        <a href="appointments.html">Appointments</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-container">
+
+        <h2>Pet Owner Registration</h2>
+        <p>Register and manage pet owner details.</p>
+
+        <!-- Owner Form -->
+        <section class="form-section">
+
+            <h3>Add New Owner</h3>
+
+            <form id="ownerForm">
+
+                <label for="ownerName">Owner Name</label>
+                <input type="text" id="ownerName"
+                    placeholder="Enter owner name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"
+                    placeholder="Enter phone number" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                    placeholder="Enter email address">
+
+                <label for="address">Address</label>
+                <textarea id="address"
+                    placeholder="Enter address" required></textarea>
+
+                <button type="submit" class="btn">
+                    Add Owner
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Owner List -->
+        <section class="table-section">
+
+            <h3>Registered Owners</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Owner ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+
+                <tbody id="ownerList">
+                    <tr>
+                        <td colspan="5">
+                            No owners registered yet.
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Lahari Pet Care | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
